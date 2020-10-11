@@ -1,0 +1,10 @@
+apiVersion: skaffold/v2beta8
+kind: Config
+metadata:
+  name: spring-boot-emp-service
+build:
+  artifacts:
+    - image: subhakarkotta/spring-boot-emp-service
+      jib: {}
+  tagPolicy:
+    sha256: {}
